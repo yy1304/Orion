@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>レビュー投稿画面</title>
+    <link rel="stylesheet" type="text/css" href="evaluation.css">
+  </head>
+  <body>
+    <form>
+    <table>
+    <tr>
+    <td>題名</td><td><input type = "text" name = "title"></td>
+    </tr>
+    <tr>
+    <td>評価</td>
+    <td>
+    <div class="hyouka">
+    <input id="hoshi1" type="radio" name="hoshi" value="5" />
+    <label for="hoshi1">★</label>
+    <input id="hoshi2" type="radio" name="hoshi" value="4" />
+    <label for="hoshi2">★</label>
+    <input id="hoshi3" type="radio" name="hoshi" value="3" />
+    <label for="hoshi3">★</label>
+    <input id="hoshi4" type="radio" name="hoshi" value="2" />
+    <label for="hoshi4">★</label>
+    <input id="hoshi5" type="radio" name="hoshi" value="1" />
+    <label for="hoshi5">★</label>
+  </div></td>
+    <tr>
+    <td>カテゴリ</td>
+    <td>
+      <div class="pulldownset">
+      <select class="mainselect">
+        <option value="">カテゴリを選択</option>
+        <option value="mens">メンズ</option>
+        <option value="ladies">レディース</option>
+      </select>
+      <select id="mens" class="subbox1">
+        <option value="">カテゴリを選択</option>
+        <option value="tops">トップス</option>
+      </select>
+      <select id="tops" class="subbox2">
+      <option value="">カテゴリを選択</option>
+      <option value="">Tシャツ・カットソー</option>
+      <option value="">シャツ</option>
+      <option value="">タンクトップ</option>
+      <option value="">ニット・セーター</option>
+      <option value="">パーカー</option>
+      <option value="">カーディガン</option>
+      <option value="">スウェット</option>
+      <option value="">ジャージ</option>
+      <option value="">その他</option>
+      </select>
+      </div>
+    </td>
+    </tr>
+    <tr>
+    <td>本文</td><td><textarea name="review" rows="100" cols="100"></textarea></td>
+    </tr>
+    <tr>
+    <td>画像</td><td><input type="file" name="image"></td>
+    </tr>
+    <tr>
+    <td>リンク</td><td><input type="text" name="link"></td>
+    </tr>
+    </table>
+    </form>
+  <button type = "submit" name = "form" value = "ok">投稿</button>
+  </body>
+</html>
